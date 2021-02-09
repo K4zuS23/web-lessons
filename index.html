@@ -1,35 +1,47 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя сторінка</title>
+	<link rel="stylesheet" href="style.css">
+</head>
 <header>
-    <img src="img/me.png" alt="Логотип"> <!-- Логотип сайта -->
+    <img src="img/me.png" width="200" height="200" alt="Логотип"> <!-- Логотип сайта -->
     <nav id="menu"> <!-- Меню -->
-	<p>Сененко Ярослав Вадимович</p>
+	<h1>Сененко Ярослав Вадимович</h1>
+	<h2>Звіт з дисципліни "WEB-дизайн"</h2>
     </nav>
 </header>
 
 <main>
-    <h1>Про мене</h1>
+	<section class = 'about'>
+    <h3>Про мене</h3>
+    <p class = 'me'>Мене звати Сененко Ярослав, навчаюсь в КМРФ, хочу навчитися програмувати.</p>
+	</section>
 
-    <p>Мене звати Ярослав Сененко.</p>
-    <p>Навчаюсь в <abbr title="Коледж морського і річкового флоту">КМРФ</abbr></p>
-    <p>Хочу навчитися програмувати.</p>
-
-    <section>
-        <h2>Лабораторні роботи</h2>
+    <section class = 'lab'>
+        <h3>Лабораторні роботи</h3>
 
         <article>
             <ol>
-            <li><a href="https://github.com/K4zuS23/web-lessons/tree/main/01">Створення найпростішого html документу</a></li>
-			<li><a href="https://github.com/K4zuS23/web-lessons/tree/main/02">Використання основних html тегів</a></li>
+            <li><a href="/01/index.html">Створення найпростішого html документу</a></li>
+			<li><a href="/02/index.html">Використання основних html тегів</a></li>
 			</ol>
         </article>
     </section>
-	
-	 <section>
-        <h2>Контакти</h2>
-
-        <ul>
-            <li><a href = "tel:+380666189961" > (066) 618-99-61</a></li>
-            <li><a href = "mailto:senenko.yaroslav@kmrf.kiev.ua">e-mail КМРФ</a></li>
-            <li><a href = "https://github.com/K4zuS23/web-lessons" target = "_blanc">Посилання на репозиторій</a></li>
-        </ul>
-    </section>
 </main>
+
+<footer>
+	 <section class = 'contacts'>
+        <h4>Контакти</h4>
+            <p class = 'tel'>+38 066 618 99 61</p>
+            <p class = 'mail'>senenko.yaroslav@kmrf.kiev.ua</p>
+            <p class = 'url'>https://github.com/K4zuS23/web-lessons</p>
+    </section>
+	
+	<section class = 'copyright'>
+		<p> Copyright @2021 Сененко Я.В.</p>
+	</section>
+</footer>
+</html>

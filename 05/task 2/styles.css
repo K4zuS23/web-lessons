@@ -1,0 +1,21 @@
+li {
+   float: left;
+   list-style-type: none;
+}
+nav{
+   height: 50px;
+   width: 1000px;
+   background-color: gray;
+}
+li:hover{
+   background-color: red;
+}
+p{
+   color:white;
+   padding-left:10px;
+   padding-right:10px;
+}
+ul{
+   margin: 0;
+   padding: 0;
+}

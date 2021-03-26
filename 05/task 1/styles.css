@@ -1,0 +1,13 @@
+figure{
+    border:1px solid lightgrey;
+    float: left;
+}
+img{
+    height: 200px;
+}
+figure:hover{
+    border:2px solid black;
+}
+figcaption{
+    text-align: center;
+}

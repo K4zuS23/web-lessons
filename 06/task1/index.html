@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Анкета посетителя ресторана</h1>
+<form action="#">
+    <fieldset>
+        <legend>Контактная информация</legend>
+        <p><label for="r1">Имя</label><input class="pole" type="text" id="r1"></p>
+        <p><label for="r1">Телефон</label><input class="pole" type="tel" id="r2"></p>
+        <p><label for="r1">E-mail</label><input class="pole" type="email" id="r3"></p>
+        <p><label for="r1">Дата посещения</label><input class="pole" type="date" id="r4"></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Персональная информация</legend>
+        <p><label for="r5">Возраст</label><input class="pole" type="number" id="r5" min="1" max="100" step="1"></p>
+        <p><label for="r6">Любимая кухня</label>
+            <select id="r6">
+            <option>Русская</option>
+            <option>Украинская</option>
+        </select></p>
+        <p><label for="r7">Какие блюда Вы хотели бы<br> увидеть в меню?</label><textarea rows="10" cols="45" name="text" id="r7"></textarea></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Оценка нашего заведения</legend>
+        <p class="question">Почему вы выбрали наше заведение?</p>
+        <p> <input name="why" type="radio" value="1">Недалеко от дома/работы</p>
+        <p> <input name="why" type="radio" value="2">Увидел рекламу</p>
+        <p> <input name="why" type="radio" value="3">Посоветовали</p>
+        <p> <input name="why" type="radio" value="4">Оптимальное соотношение цены и качества</p>
+        <p class="question">Вы будете рекомендовать наше заведение своим знакомым?</p>
+        <p> <input name="recomendate" type="radio" value="1">Да</p>
+        <p> <input name="recomendate" type="radio" value="2">Нет</p>
+    </fieldset>
+    <input class="button" type="submit" value="Отправить">
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.container{
+    width: 100vw;
+    background-color: #32425C;
+    min-height:100px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items:center;
+    padding-left:20px;
+    padding-right:20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+li > a{
+    background-color: #5C6A88;
+    padding:10px;
+
+}
+li:hover{
+    cursor: pointer;
+}
+.img-container{
+    display: flex;
+    flex-wrap: nowrap;
+}

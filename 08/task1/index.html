@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title> </title>
+</head>
+<body>
+<script>
+   let name = "назву";
+   let cost = "ціну";
+   let count = "кількість";
+   name= ifNaN(name);
+   cost = ifNaN(cost);
+   count = ifNaN(count);
+   let x = +cost * +count;
+   alert(`За ${count} од. товару ${name} треба сплатити ${x}`);
+   function ifNaN(number)
+   {
+       let text=number;
+       number = prompt(`Введіть ${text}`);
+       while(isNaN(number) && text !== name || number.toString() === "")
+       {
+           number = prompt("Введіть коректне значення", "");
+       }
+       return number;
+   }
+</script>
+</body>
+</html>
+

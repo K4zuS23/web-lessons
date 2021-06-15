@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let inArr = false;
+
+    let mail;
+    do {
+        mail = prompt("Введіть email:");
+        if (mail === null)
+        {
+            break;
+        }
+        for (let i = 0; i < arr.length; i++)
+        {
+            if (mail === arr[i])
+                inArr = true;
+        }
+        if (inArr)
+            alert("Така електронна адреса вже зареєстрована!")
+        else
+            arr.push(mail);
+        inArr = false;
+    } while (mail !== "");
+
+    mail = arr.join(", ");
+    alert(`${mail}`);
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function AddPosition(name, price, count){
+        return {
+            name: name,
+            price: price,
+            count: count,
+            Output() {
+                alert(`${this.count} од. товару ${this.name} коштують ${this.price * this.count} грн.`)
+            }
+        }
+    }
+    let first = AddPosition("Циркуль", 500, 4);
+    let second = AddPosition("Олівець", 222, 10);
+    let third = AddPosition("Транспортир", 350, 10);
+    first.Output();
+    second.Output();
+    third.Output();
+</script>
+</body>
+</html>
